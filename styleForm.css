@@ -7,6 +7,10 @@
 body {
     font-family: 'Lato', sans-serif;
     width: 100vw;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* Contenedor del formulario */
 .form-container {
@@ -16,7 +20,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 600px;
-    margin: 0 auto;  /* Para centrar el formulario */
+    margin: 20px 0 20px 0;
 }
 
 h1 {
