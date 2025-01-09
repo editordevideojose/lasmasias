@@ -113,8 +113,8 @@ button:hover {
 
 /* Estilo para todos los huéspedes */
 .huesped {
-    background-color: #f4f4f4; /* Fondo común para todos */
-    padding: 20px;
+    background-color: #ececec; /* Fondo común para todos */
+    padding: 20px 20px 0px 20px;
     border-radius: 5px;
     margin-bottom: 20px;
 }
