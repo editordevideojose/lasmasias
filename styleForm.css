@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    width: 100vw;
+}
 /* Contenedor del formulario */
 .form-container {
     background-color: #ffffff;
@@ -17,7 +27,7 @@ h1 {
 }
 
 h2 {
-    font-size: 22px; /* Aumentado tamaño de fuente */
+    font-size: 14px; /* Aumentado tamaño de fuente */
     color: #555;
     text-align: center;
     margin-bottom: 20px; /* Mayor separación inferior */
@@ -103,4 +113,8 @@ button:hover {
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
+}
+
+p{
+    text-align: justify;
 }
