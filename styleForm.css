@@ -1,0 +1,106 @@
+/* Contenedor del formulario */
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;  /* Para centrar el formulario */
+}
+
+h1 {
+    font-size: 28px; /* Aumentado tamaño de fuente */
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px; /* Mayor separación inferior */
+}
+
+h2 {
+    font-size: 22px; /* Aumentado tamaño de fuente */
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px; /* Mayor separación inferior */
+}
+
+/* Estilo de los inputs, selects y botones */
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilo de los labels */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+}
+
+/* Estilo para los títulos dentro de los huéspedes */
+.huesped h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Eliminar títulos solo para los campos de nombre, edad y DNI */
+input::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+/* Estilo de botones */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.important-message, .alert-message {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 4px solid #ffc107;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.important-message p, .alert-message p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.download-btn {
+    background-color: #FFD700; /* Amarillo */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #FFBF00; /* Amarillo más oscuro al pasar el mouse */
+}
+
+/* Estilo para todos los huéspedes */
+.huesped {
+    background-color: #f4f4f4; /* Fondo común para todos */
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}

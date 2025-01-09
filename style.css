@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -6,11 +6,12 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    width: 100vw;
 }
 
 .home {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -19,12 +20,10 @@ body {
     color: aliceblue;
 }
 
-.barra {
-    background-color: aliceblue;
+.barra1 {
+    background-color: rgb(233, 233, 233);
     color: black;
     width: 100%;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
     position: fixed;
     top: 0;
     left: 0;
@@ -34,16 +33,34 @@ body {
     flex-direction: row;
     align-items: center;
     padding: 7px 5px;
-    .aqui{
-        background-color: gold;
-        border-radius: 5px;
-        padding: 2px 4px;
-        margin-left: 3px;
-    }
+}
+
+.barra {
+    background-color: aliceblue;
+    color: black;
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px 5px;
+}
+
+.aqui {
+    background-color: gold;
+    border-radius: 5px;
+    padding: 2px 4px;
+    margin-left: 3px;
 }
 
 
-.titulo{
+.titulo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,20 +68,22 @@ body {
     text-align: center;
     margin: -30px 0 20px 0;
     font-size: 150%;
-    h6{
+
+    h6 {
         font-weight: 400;
-        
+
     }
-    
+
 }
 
 .video-background {
     position: relative;
     height: 100vh;
-    overflow: hidden; /* Elimina los bordes */
-  }
-  
-  .video-background video {
+    overflow: hidden;
+    /* Elimina los bordes */
+}
+
+.video-background video {
     position: absolute;
     top: 0;
     left: 0;
@@ -72,10 +91,11 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    filter: blur(2px); /* Desenfoque */
-  }
-  
-  .overlay {
+    filter: blur(2px);
+    /* Desenfoque */
+}
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -83,7 +103,7 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
     z-index: -1;
-  }
+}
 
 .tiempo {
     display: flex;
@@ -100,7 +120,7 @@ body {
     margin-bottom: 30px;
 }
 
-.btnDisponibilidad{
+.btnDisponibilidad {
     width: 50%;
     padding: 15px 10px;
     border-radius: 5px;
@@ -111,7 +131,7 @@ body {
 
 }
 
-.btnLlegar{
+.btnLlegar {
     width: 50%;
     padding: 15px 10px;
     border-radius: 5px;
@@ -119,4 +139,23 @@ body {
     color: aliceblue;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
