@@ -65,6 +65,31 @@ for (let i = 1; i <= 7; i++) {
 
 
 
+function initCarrusel(id) {
+    const carrusel = document.querySelector(`#${id}`);
+    const images = carrusel.querySelectorAll("img");
+    let index = 0;
+
+    if (images.length > 0) {
+        images[index].classList.add("active");
+
+        setInterval(() => {
+            images[index].classList.remove("active");
+            index = (index + 1) % images.length;
+            images[index].classList.add("active");
+        }, 3000);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    initCarrusel("carrusel-luna");
+    initCarrusel("carrusel-cielo");
+});
+
+
+
+
+
 
 
 
