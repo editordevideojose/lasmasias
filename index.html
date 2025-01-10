@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-
-
-
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -81,64 +79,48 @@
     </div>
     
 
-    <div class="tarjetas-container">
-        <!-- Tarjeta 1: Masia de la Luna -->
-        <div class="tarjeta">
-            <h3><i class="fas fa-moon"></i> Masia de la Luna</h3>
-            <p><i class="fas fa-user"></i> 6/7 personas</p>
-            <div class="carrusel" id="carrusel-luna">
-                <img class="active" src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.24 (1).jpeg" alt="Vista de la cabaña">
-                <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.24.jpeg" alt="Interior de la cabaña">
-                <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.25 (1).jpeg" alt="Jardín de la cabaña">
-                <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.25.jpeg" alt="Jardín de la cabaña">
-                <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.26 (1).jpeg" alt="Jardín de la cabaña">
-                <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.26.jpeg" alt="Jardín de la cabaña">
+    <div class="card-container">
+        <!-- Tarjeta 1 - Masia de la Luna -->
+        <div class="card">
+          <h2> <i class="fas fa-moon"></i> Masia de la Luna</h2>
+          <p> <i class="fas fa-user"></i> 5/7 personas</p>
+          <div class="carousel">
+            <div class="carousel-images">
+              <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.24 (1).jpeg" alt="Masia de la Luna 1">
+              <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.24.jpeg" alt="Masia de la Luna 2">
+              <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.25 (1).jpeg" alt="Masia de la Luna 3">
+              <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.25.jpeg" alt="Masia de la Luna 4">
+              <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.26 (1).jpeg" alt="Masia de la Luna 5">
+              <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.26.jpeg" alt="Masia de la Luna 6">
             </div>
-            <button class="btn-ver-mas">VER MÁS</button>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+          <button class="btn">VER MÁS</button>
         </div>
     
-        <!-- Tarjeta 2: Masia del Cielo -->
-        <div class="tarjeta">
-            <h3><i class="fas fa-cloud"></i> Masia del Cielo</h3>
-            <p><i class="fas fa-user"></i> 3/4 personas </p>
-            <div class="carrusel" id="carrusel-cielo">
-                <img class="active" src="img/Cielo/WhatsApp Image 2025-01-10 at 13.33.08 (1).jpeg" alt="Vista de la cabaña">
-                <img src="img/Cielo/WhatsApp Image 2025-01-10 at 13.33.08.jpeg" alt="Interior de la cabaña">
-                <img src="img/Cielo/WhatsApp Image 2025-01-10 at 13.34.24.jpeg" alt="Jardín de la cabaña">
-                <img src="img/Cielo/WhatsApp Image 2025-01-10 at 13.34.56.jpeg" alt="Jardín de la cabaña">
-                <img src="img/Cielo/WhatsApp Image 2025-01-10 at 13.35.30.jpeg" alt="Jardín de la cabaña">
-                <img src="img/Cielo/WhatsApp Image 2025-01-10 at 13.35.55.jpeg" alt="Jardín de la cabaña">
+        <!-- Tarjeta 2 - Masia del Cielo -->
+        <div class="card">
+          <h2> <i class="fas fa-cloud"></i> Masia del Cielo</h2>
+          <p> <i class="fas fa-user"></i> 3/4 personas</p>
+          <div class="carousel">
+            <div class="carousel-images">
+              <img src="img/Cielo/WhatsApp Image 2025-01-10 at 13.33.08.jpeg" alt="Masia del Cielo 1">
+              <img src="img/Cielo/WhatsApp Image 2025-01-10 at 13.34.24.jpeg" alt="Masia del Cielo 2">
+              <img src="img/Cielo/WhatsApp Image 2025-01-10 at 13.34.56.jpeg" alt="Masia del Cielo 3">
+              <img src="img/Cielo/WhatsApp Image 2025-01-10 at 13.35.30.jpeg" alt="Masia del Cielo 4">
+              <img src="img/Cielo/WhatsApp Image 2025-01-10 at 13.35.55.jpeg" alt="Masia del Cielo 5">
             </div>
-            <button class="btn-ver-mas">VER MÁS</button>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+          <button class="btn">VER MÁS</button>
         </div>
-    </div>
-    
-    
+      </div>
     
     
     
 
-    
-
-    <div id="Servicios">
-        <h2>Servicios</h2>
-        <h5>WIFI gratis</h5>
-        <h5>Cochera cubierta</h5>
-        <h5>Churrasquera</h5>
-        <h5>Reposeras</h5>
-        <h5>Sábanas y toallas</h5>
-        <h5>Vajilla completa</h5>
-    </div>
-
-    <div>
-        <h3>Información importante</h3>
-        <p>Cobro de alquiler</p>
-        <p>Cobro de enttrada y estadia</p>
-
-    </div>
-
-
-    <script src="script.js"></script>
 </body>
 
 </html>
