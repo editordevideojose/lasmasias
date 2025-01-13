@@ -370,6 +370,54 @@ body {
 
 
 
+  .card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.nights-container {
+    margin-bottom: 15px;
+}
+
+#nights {
+    width: 60px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.total {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.reminder {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
 
 
 

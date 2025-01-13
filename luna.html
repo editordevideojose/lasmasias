@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+        <h3>Título del paquete</h3>
+        <div class="nights-container">
+            <label for="nights">Cantidad de noches:</label>
+            <input type="number" id="nights" min="1" value="1" onchange="calculateTotal()">
+        </div>
+        <div class="total">
+            <p>Total: $<span id="total">100</span></p>
+        </div>
+        <p class="reminder">Recuerda que solo puedes reservar si consultaste disponibilidad previamente.</p>
+        <!-- Enlace al form.html al hacer clic en el botón -->
+        <a href="form.html">
+            <button class="btnVermas">Iniciar reserva</button>
+        </a>
+    </div>
+    
+    <script src="cabana.js"></script>
+
+</body>
+</html>

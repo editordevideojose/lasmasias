@@ -60,6 +60,35 @@ for (let i = 1; i <= 7; i++) {
     huespedesContainer.appendChild(huespedDiv);
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".form-section");
+    const continueButtons = document.querySelectorAll(".continue-btn");
+    const submitButton = document.querySelector(".submit-btn");
+    const modal = document.getElementById("confirmation-modal");
+    const finalizeButton = document.getElementById("finalize-btn");
+
+    let currentSection = 0;
+    sections[currentSection].classList.add("active");
+
+    continueButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            const nextSection = parseInt(btn.getAttribute("data-next")) - 1;
+            sections[currentSection].classList.remove("active");
+            sections[nextSection].classList.add("active");
+            currentSection = nextSection;
+        });
+    });
+
+    // Show modal on submit
+    submitButton.addEventListener("click", () => {
+        modal.style.display = "flex";
+    });
+
+    // Redirect to index.html on finalize
+    finalizeButton.addEventListener("click", () => {
+        window.location.href = "index.html";
+    });
+});
 
 
 
@@ -73,6 +102,27 @@ for (let i = 1; i <= 7; i++) {
 
 
 
+// Obtener el total de luna.html
+function getTotalFromLuna() {
+    const totalElement = document.getElementById('total');
+    return parseFloat(totalElement.textContent) || 0;
+}
+
+// Calcular la seña y el saldo pendiente
+function updatePagoSection() {
+    const total = getTotalFromLuna();
+    const seña = total / 2;
+    const saldoPendiente = seña; // El saldo pendiente es el mismo que la seña para este caso
+
+    document.getElementById('total-pagar').textContent = total.toFixed(2);
+    document.getElementById('seña').textContent = seña.toFixed(2);
+    document.getElementById('saldo-pendiente').textContent = saldoPendiente.toFixed(2);
+}
+
+// Actualizar los valores al cargar la página
+window.onload = function() {
+    updatePagoSection();
+};
 
 
 
@@ -81,4 +131,23 @@ for (let i = 1; i <= 7; i++) {
 
 
 
+// Obtener el total guardado de localStorage
+function getTotalFromLocalStorage() {
+    return parseFloat(localStorage.getItem('total')) || 0;
+}
 
+// Actualizar la sección de pago
+function updatePagoSection() {
+    const total = getTotalFromLocalStorage();
+    const seña = total / 2;
+    const saldoPendiente = seña;
+
+    document.getElementById('total-pagar').textContent = total.toFixed(2);
+    document.getElementById('seña').textContent = seña.toFixed(2);
+    document.getElementById('saldo-pendiente').textContent = saldoPendiente.toFixed(2);
+}
+
+// Actualizar los valores al cargar la página
+window.onload = function() {
+    updatePagoSection();
+};
