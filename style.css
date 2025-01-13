@@ -268,11 +268,12 @@ body {
   
 .carousel {
     position: relative;
-    width: 300px;
+    width: 95%;
     height: 200px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
   }
 
   .carousel-images {
@@ -318,7 +319,7 @@ body {
 
   .tarjeta{
     width: 90%;
-    margin: 20px 0px;
+    margin: 15px 0px;
     padding: 10px;
     border: 10px;
     display: flex;
@@ -335,7 +336,7 @@ body {
     background-color: #007BFF;
     padding: 10px;
     margin: 10px 0px;
-    width: 80%;
+    width: 90%;
     text-align: center;
   } 
   
