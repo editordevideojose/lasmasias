@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -40,9 +40,7 @@
             <i class="fa fa-map-marker-alt"></i> Cómo llegar
         </a>
         <p>Si ya consultaste disponibilidad:</p>
-        <a class="btnReservar"
-            href="form.html"
-            target="_blank">
+        <a class="btnReservar" href="form.html" target="_blank">
             <i class="fa fa-calendar-check"></i> RESERVAR
         </a>
 
@@ -72,54 +70,78 @@
     <div class="bienvenida-container">
         <div class="bienvenida-texto">
             <h2><i class="fas fa-umbrella-beach"></i> Un lugar para tus vacaciones</h2>
-            <p>¡Te damos la bienvenida a nuestro complejo de cabañas en el corazón de El Nihuil! Aquí encontrarás un lugar para desconectarte y disfrutar de la naturaleza. Rodeados por el lago, con la vista al cerro El Nevado. Te invitamos a vivir momentos inolvidables en un entorno único. ¡Te esperamos!</p>
+            <p>¡Te damos la bienvenida a nuestro complejo de cabañas en el corazón de El Nihuil! Aquí encontrarás un
+                lugar para desconectarte y disfrutar de la naturaleza. Rodeados por el lago, con la vista al cerro El
+                Nevado. Te invitamos a vivir momentos inolvidables en un entorno único. ¡Te esperamos!</p>
             <button class="btn-reservar2"><i class="fa fa-calendar-check"></i> RESERVAR</button>
         </div>
-        
-    </div>
-    
 
-    <div class="card-container">
-        <!-- Tarjeta 1 - Masia de la Luna -->
-        <div class="card">
-          <h2> <i class="fas fa-moon"></i> Masia de la Luna</h2>
-          <p> <i class="fas fa-user"></i> 5/7 personas</p>
-          <div class="carousel">
-            <div class="carousel-images">
-              <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.24 (1).jpeg" alt="Masia de la Luna 1">
-              <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.24.jpeg" alt="Masia de la Luna 2">
-              <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.25 (1).jpeg" alt="Masia de la Luna 3">
-              <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.25.jpeg" alt="Masia de la Luna 4">
-              <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.26 (1).jpeg" alt="Masia de la Luna 5">
-              <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.26.jpeg" alt="Masia de la Luna 6">
+    </div>
+
+
+    <div id="tarjetas" class="tarjetas">
+        <div class="tarjeta">
+            <h2>Masía de la Luna</h2>
+            <p> <i class="fas fa-user"></i>
+                6/7 personas</p>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.24 (1).jpeg" alt="Imagen 1">
+                    <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.24.jpeg" alt="Imagen 2">
+                    <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.25 (1).jpeg" alt="Imagen 3">
+                    <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.25.jpeg" alt="Imagen 4">
+                    <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.26 (1).jpeg" alt="Imagen 5">
+                    <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.26.jpeg" alt="Imagen 6">
+                </div>
+                <div class="carousel-dots">
+                </div>
             </div>
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
-          </div>
-          <button class="btn">VER MÁS</button>
-        </div>
-    
-        <!-- Tarjeta 2 - Masia del Cielo -->
-        <div class="card">
-          <h2> <i class="fas fa-cloud"></i> Masia del Cielo</h2>
-          <p> <i class="fas fa-user"></i> 3/4 personas</p>
-          <div class="carousel">
-            <div class="carousel-images">
-              <img src="img/Cielo/WhatsApp Image 2025-01-10 at 13.33.08.jpeg" alt="Masia del Cielo 1">
-              <img src="img/Cielo/WhatsApp Image 2025-01-10 at 13.34.24.jpeg" alt="Masia del Cielo 2">
-              <img src="img/Cielo/WhatsApp Image 2025-01-10 at 13.34.56.jpeg" alt="Masia del Cielo 3">
-              <img src="img/Cielo/WhatsApp Image 2025-01-10 at 13.35.30.jpeg" alt="Masia del Cielo 4">
-              <img src="img/Cielo/WhatsApp Image 2025-01-10 at 13.35.55.jpeg" alt="Masia del Cielo 5">
+            <div class="icon-container">
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-bed"></i>
+                <i class="fas fa-shower"></i> <!-- Cambio de 'baño' a 'ducha' -->
+                <i class="fas fa-utensils"></i>
+                <i class="fas fa-couch"></i> <!-- Cambio de 'silla' a 'sofá' -->
+                <i class="fas fa-tv"></i> <!-- Cambio de 'tv' a otro icono de 'tv' -->
+                <i class="fas fa-bbq"></i> <!-- Cambio de 'fuego' a 'parrilla' o churrasquera -->
             </div>
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
-          </div>
-          <button class="btn">VER MÁS</button>
+            <a class="btnVermas" href="">VER MÁS</a>
         </div>
-      </div>
-    
-    
-    
+        <div class="tarjeta">
+            <h2>Masía del Cielo</h2>
+            <p> <i class="fas fa-user"></i>
+                3/4 personas</p>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="img/Cielo/WhatsApp Image 2025-01-10 at 13.33.08 (1).jpeg" alt="Imagen 1">
+                    <img src="img/Cielo/WhatsApp Image 2025-01-10 at 13.33.08.jpeg" alt="Imagen 2">
+                    <img src="img/Cielo/WhatsApp Image 2025-01-10 at 13.34.24.jpeg" alt="Imagen 3">
+                    <img src="img/Cielo/WhatsApp Image 2025-01-10 at 13.34.56.jpeg" alt="Imagen 4">
+                    <img src="img/Cielo/WhatsApp Image 2025-01-10 at 13.35.30.jpeg" alt="Imagen 5">
+                    <img src="img/Cielo/WhatsApp Image 2025-01-10 at 13.35.55.jpeg" alt="Imagen 6">
+                </div>
+                <div class="carousel-dots">
+                </div>
+            </div>
+            <div class="icon-container">
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-bed"></i>
+                <i class="fas fa-shower"></i> <!-- Cambio de 'baño' a 'ducha' -->
+                <i class="fas fa-utensils"></i>
+                <i class="fas fa-couch"></i> <!-- Cambio de 'silla' a 'sofá' -->
+                <i class="fas fa-tv"></i> <!-- Cambio de 'tv' a otro icono de 'tv' -->
+                <i class="fas fa-bbq"></i> <!-- Cambio de 'fuego' a 'parrilla' o churrasquera -->
+            </div>
+            <a class="btnVermas" href="">VER MÁS</a>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="carrusel.js"></script>
+
 
 </body>
 

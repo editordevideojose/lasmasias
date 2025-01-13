@@ -66,32 +66,7 @@ for (let i = 1; i <= 7; i++) {
 
 
 
-let index1 = 0;
-let index2 = 0;
 
-function moveSlide(direction, carouselId) {
-  const carousel = document.getElementById(carouselId).querySelector('.carousel-images');
-  const images = carousel.querySelectorAll('img');
-  const totalImages = images.length;
-  
-  if (carouselId === 'carousel1') {
-    index1 = (index1 + direction + totalImages) % totalImages;
-    carousel.style.transform = `translateX(-${index1 * 100}%)`;
-  } else {
-    index2 = (index2 + direction + totalImages) % totalImages;
-    carousel.style.transform = `translateX(-${index2 * 100}%)`;
-  }
-}
-
-// Carrusel automático para la primera tarjeta (Masia de la Luna)
-setInterval(() => {
-  moveSlide(1, 'carousel1');
-}, 3000); // Cambia cada 3 segundos
-
-// Carrusel automático para la segunda tarjeta (Masia del Cielo)
-setInterval(() => {
-  moveSlide(1, 'carousel2');
-}, 3000); // Cambia cada 3 segundos
 
 
 
