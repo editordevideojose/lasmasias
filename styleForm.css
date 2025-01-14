@@ -7,17 +7,15 @@
 body {
     font-family: 'Lato', sans-serif;
     width: 100vw;
-    background-color: cornflowerblue;
+    background-color: rgb(215, 215, 215);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 /* Contenedor del formulario */
 .form-container {
-    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 600px;
     margin: 20px 0 20px 0;
@@ -113,8 +111,8 @@ button:hover {
 
 /* Estilo para todos los huéspedes */
 .huesped {
-    background-color: #ececec; /* Fondo común para todos */
-    padding: 20px 20px 0px 20px;
+border: solid aliceblue;    
+padding: 20px 20px 0px 20px;
     border-radius: 5px;
     margin-bottom: 20px;
 }
@@ -131,8 +129,84 @@ p{
     display: block;
 }
 
+#pay-btn{
+    background-color: #007BFF;
+    color: aliceblue;
+}
 
-/* Modal styles */
+
+
+
+
+/* SELECTOR DE NOCHES */
+.nights-select {
+    margin: 20px 0;
+}
+
+.nights-select label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.nights-select select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+/* BOTON ADJUNTAR COMPROBANTE EN SECCION PAGOS */
+/* Contenedor de carga de archivos */
+.file-upload-wrapper {
+    position: relative;
+    width: 93%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Estilo del botón de carga */
+.file-upload-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    color: #007BFF;
+    text-align: center;
+    border: solid 1px #007BFF;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.file-upload-btn:hover {
+    background-color: #45a049;
+}
+
+/* Ocultar el input file */
+input.comprobante {
+    position: absolute;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Mensaje de archivo no seleccionado */
+.file-upload-message {
+    display: block;
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+}
+
+/* MODAL RESERVA CONFIRMADA */
 .modal {
     display: none;
     position: fixed;
@@ -171,6 +245,7 @@ p{
     background-color: #45a049;
 }
 
-
-
-
+#continue-btn{
+    background-color: #007BFF;
+    color: aliceblue;
+}

@@ -34,7 +34,15 @@
                     <option value="masia-cielo">Masía del Cielo (2/4 personas)</option>
                 </select>
             </div>
-            <button type="button" class="continue-btn" data-next="2">Continuar</button>
+            <!-- Título y selector -->
+            <div class="nights-select">
+                <label for="nights">¿Cuántas noches vas a alojarte?</label>
+                <select id="nights" name="nights">
+                    <!-- Opciones generadas automáticamente de 1 a 15 -->
+                </select>
+                <h3>TOTAL A PAGAR:</h3>
+            </div>
+            <button type="button" class="continue-btn" data-next="2" id="continue-btn">Continuar</button>
         </div>
 
 
@@ -109,7 +117,7 @@
                     Club de Pescadores.</p>
                 <button class="download-btn">Descargar Reglamento</button>
             </div>
-            <button type="button" class="continue-btn" data-next="3">Continuar al pago</button>
+            <button type="button" class="continue-btn" id="continue-btn" data-next="3">Continuar al pago</button>
         </div>
 
 
@@ -118,16 +126,31 @@
         <!-- Sección 3: Pago -->
         <div class="form-section" id="section-3">
             <h2>PAGO</h2>
-            <p>Recuerda que la reserva queda efectiva abonando la seña del 50%.</p>
+            <div class="important-message">
+                <p>Recuerda que la reserva queda efectiva abonando la seña del 50%.</p>
+            </div>
+
+            <div class="totalYsena">
+                <h4>Total a pagar:</h4>
+                <h4>Seña del 50%:</h4>
+            </div>
+
             <div class="payment-info">
                 <p>Para pago por transferencia:</p>
-                <p><strong>ALIAS:</strong> mi.alias.mp</p>
-                <p><strong>CBU:</strong> 0020222002</p>
-                <label for="comprobante">Adjuntar comprobante:</label>
-                <input type="file" id="comprobante">
+                <div class="important-message">
+                    <p><strong>ALIAS:</strong> mi.alias.mp</p>
+                    <p><strong>CBU:</strong> 0020222002</p>
+                </div>
             </div>
-            <p>O paga en 2 cuotas sin interés:</p>
-            <button type="button" class="pay-btn">Pagar con tarjeta</button>
+            <p>O paga <strong>el total</strong> en 2 cuotas sin interés:</p>
+            <button type="button" class="pay-btn" id="pay-btn">Pagar con tarjeta</button>
+            <!-- <label for="comprobante">Adjuntar comprobante de pago:</label> -->
+            <div class="file-upload-wrapper">
+                <label for="comprobante" class="file-upload-btn">Adjuntar comprobante</label>
+                <input type="file" id="comprobante" class="comprobante">
+                <span class="file-upload-message">Sin archivos seleccionados</span>
+            </div>
+
             <button type="button" class="submit-btn">Enviar formulario</button>
         </div>
 

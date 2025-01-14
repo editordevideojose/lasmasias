@@ -92,6 +92,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const nightsSelect = document.getElementById("nights");
+
+    // Generar opciones del select de 1 a 15
+    for (let i = 1; i <= 15; i++) {
+        const option = document.createElement("option");
+        option.value = i;
+        option.textContent = i;
+        nightsSelect.appendChild(option);
+    }
+});
 
 
 
@@ -102,27 +113,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// Obtener el total de luna.html
-function getTotalFromLuna() {
-    const totalElement = document.getElementById('total');
-    return parseFloat(totalElement.textContent) || 0;
-}
-
-// Calcular la seña y el saldo pendiente
-function updatePagoSection() {
-    const total = getTotalFromLuna();
-    const seña = total / 2;
-    const saldoPendiente = seña; // El saldo pendiente es el mismo que la seña para este caso
-
-    document.getElementById('total-pagar').textContent = total.toFixed(2);
-    document.getElementById('seña').textContent = seña.toFixed(2);
-    document.getElementById('saldo-pendiente').textContent = saldoPendiente.toFixed(2);
-}
-
-// Actualizar los valores al cargar la página
-window.onload = function() {
-    updatePagoSection();
-};
 
 
 
@@ -131,23 +121,10 @@ window.onload = function() {
 
 
 
-// Obtener el total guardado de localStorage
-function getTotalFromLocalStorage() {
-    return parseFloat(localStorage.getItem('total')) || 0;
-}
 
-// Actualizar la sección de pago
-function updatePagoSection() {
-    const total = getTotalFromLocalStorage();
-    const seña = total / 2;
-    const saldoPendiente = seña;
 
-    document.getElementById('total-pagar').textContent = total.toFixed(2);
-    document.getElementById('seña').textContent = seña.toFixed(2);
-    document.getElementById('saldo-pendiente').textContent = saldoPendiente.toFixed(2);
-}
 
-// Actualizar los valores al cargar la página
-window.onload = function() {
-    updatePagoSection();
-};
+
+
+
+
