@@ -110,6 +110,96 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+    // CAALCULADORA DE NOCHES Y PRECIO TOTAL A PAGAR
+document.addEventListener("DOMContentLoaded", function () {
+    // Seleccionamos los elementos del DOM
+    const cabanaSelect = document.getElementById("cabana");
+    const nightsSelect = document.getElementById("nights");
+    const totalDisplay = document.createElement("h3");
+
+    // Agregamos el elemento para mostrar el total
+    const nightsContainer = document.querySelector(".nights-select");
+    totalDisplay.textContent = "TOTAL A PAGAR: $0";
+    nightsContainer.appendChild(totalDisplay);
+
+    // Rellenamos el select de noches con opciones de 1 a 15
+    for (let i = 1; i <= 15; i++) {
+        const option = document.createElement("option");
+        option.value = i;
+        option.textContent = i;
+        nightsSelect.appendChild(option);
+    }
+
+    // Función para calcular el total
+    function calculateTotal() {
+        const cabanaValue = cabanaSelect.value;
+        const nightsValue = parseInt(nightsSelect.value) || 0;
+
+        let pricePerNight = 0;
+
+        if (cabanaValue === "masia-cielo") {
+            pricePerNight = 100;
+        } else if (cabanaValue === "masia-luna") {
+            pricePerNight = 200;
+        }
+
+        const total = nightsValue * pricePerNight;
+        totalDisplay.textContent = `TOTAL A PAGAR: $${total}`;
+    }
+
+    // Añadimos los event listeners para actualizar el cálculo
+    cabanaSelect.addEventListener("change", calculateTotal);
+    nightsSelect.addEventListener("change", calculateTotal);
+});
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Seleccionamos los elementos del DOM
+    const cabanaSelect = document.getElementById("cabana");
+    const nightsSelect = document.getElementById("nights");
+    const totalPagoDisplay = document.getElementById("total-pago");
+    const sena50Display = document.getElementById("sena-50");
+
+    // Función para calcular el total
+    function calculateTotal() {
+        const cabanaValue = cabanaSelect.value;
+        const nightsValue = parseInt(nightsSelect.value) || 0;
+
+        let pricePerNight = 0;
+
+        // Asignamos el precio por noche según la cabaña
+        if (cabanaValue === "masia-cielo") {
+            pricePerNight = 100; // Precio por noche para masia-cielo
+        } else if (cabanaValue === "masia-luna") {
+            pricePerNight = 200; // Precio por noche para masia-luna
+        }
+
+        const total = nightsValue * pricePerNight; // Total a pagar
+        const sena = total / 2; // Seña del 50%
+
+        // Actualizamos el DOM con el total a pagar y la seña
+        totalPagoDisplay.textContent = `$${total}`;
+        sena50Display.textContent = `$${sena}`;
+    }
+
+    // Event listeners para los cambios en el selector de cabaña y noches
+    cabanaSelect.addEventListener("change", calculateTotal);
+    nightsSelect.addEventListener("change", calculateTotal);
+});
+
+
+
+
+
+
+
 
 
 

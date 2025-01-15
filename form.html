@@ -40,8 +40,8 @@
                 <select id="nights" name="nights">
                     <!-- Opciones generadas automáticamente de 1 a 15 -->
                 </select>
-                <h3>TOTAL A PAGAR:</h3>
             </div>
+            
             <button type="button" class="continue-btn" data-next="2" id="continue-btn">Continuar</button>
         </div>
 
@@ -127,22 +127,26 @@
         <div class="form-section" id="section-3">
             <h2>PAGO</h2>
             <div class="important-message">
-                <p>Recuerda que la reserva queda efectiva abonando la seña del 50%.</p>
+                <p>Podés pagar el total o solo la seña según tu preferencia. Recordá que la reserva se confirma al abonar el 50% de la seña.</p>
             </div>
 
-            <div class="totalYsena">
-                <h4>Total a pagar:</h4>
-                <h4>Seña del 50%:</h4>
+            <div class="important-message">
+                <div class="totalYsena">
+                    <h4>TOTAL A PAGAR: <span id="total-pago"></span></h4>
+                    <h4>Seña del 50%: <span id="sena-50"></span></h4>
+                </div>
             </div>
+
+            
 
             <div class="payment-info">
-                <p>Para pago por transferencia:</p>
+                <p>Pagá por transferencia:</p>
                 <div class="important-message">
                     <p><strong>ALIAS:</strong> mi.alias.mp</p>
                     <p><strong>CBU:</strong> 0020222002</p>
                 </div>
             </div>
-            <p>O paga <strong>el total</strong> en 2 cuotas sin interés:</p>
+            <p>O pagá <strong>el total</strong> en 2 cuotas sin interés:</p>
             <button type="button" class="pay-btn" id="pay-btn">Pagar con tarjeta</button>
             <!-- <label for="comprobante">Adjuntar comprobante de pago:</label> -->
             <div class="file-upload-wrapper">

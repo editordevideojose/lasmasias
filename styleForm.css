@@ -140,7 +140,11 @@ p{
 
 /* SELECTOR DE NOCHES */
 .nights-select {
-    margin: 20px 0;
+    margin: 0 0 20px 0;
+}
+
+.nights-select h3{
+    margin-top: 10px;
 }
 
 .nights-select label {
