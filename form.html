@@ -14,7 +14,9 @@
     <div class="form-container">
         <!-- Sección 1: Datos de la Reserva -->
         <div class="form-section" id="section-1">
-            <h1>Datos de la Reserva</h1>
+            <h1 id="h1Form">Datos de la Reserva</h1>
+            <br>
+            <br>
             <br>
             <input type="text" id="nombre-reserva" name="nombre-reserva"
                 placeholder="¿A nombre de quién está la reserva?">
@@ -40,18 +42,20 @@
                     <!-- Opciones generadas automáticamente de 1 a 15 -->
                 </select>
             </div>
-            
+
             <button type="button" class="continue-btn" data-next="2" id="continue-btn">Continuar</button>
         </div>
 
 
 
         <div class="form-section" id="section-2">
-            <h1>Datos de los Huéspedes</h1>
+            <h1 id="h1Form">Datos de los Huéspedes</h1>
+            <br>
+            <br>
+            <br>
             <br>
             <!-- Datos de los huéspedes -->
             <div id="huespedes">
-
                 <!-- Huesped 1 -->
                 <div class="huesped">
                     <label for="nombre-huesped1">Nombre y apellido</label>
@@ -69,8 +73,15 @@
                         <option value="no">No</option>
                     </select>
 
-                    <label for="foto-dni-huesped1">Adjuntá foto o PDF del DNI</label>
-                    <input type="file" id="foto-dni-huesped1" name="huesped-foto-dni1">
+                    <div class="file-upload-wrapper">
+                        
+                        <label for="foto-dni-huesped1" class="file-upload-btn">Adjuntá foto o PDF del DNI</label>
+                        <input type="file" id="foto-dni-huesped1" name="huesped-foto-dni1">
+                        <span class="file-upload-message">Sin archivos seleccionados</span>
+                    </div>
+
+
+
                 </div>
 
                 <!-- Huesped 2 -->
@@ -115,7 +126,7 @@
             <div class="alert-message">
                 <p> <i class="fa fa-exclamation-triangle"></i> Antes del ingreso, te recomendamos leer el reglamento del
                     Club de Pescadores.</p>
-                    <a href="Reglamento-ClubDePescadores.pdf" class="download-btn" download>Descargar Reglamento</a>
+                <a href="Reglamento-ClubDePescadores.pdf" class="download-btn" download>Descargar Reglamento</a>
             </div>
             <button type="button" class="continue-btn" id="continue-btn" data-next="3">Continuar al pago</button>
         </div>
@@ -125,24 +136,26 @@
 
         <!-- Sección 3: Pago -->
         <div class="form-section" id="section-3">
-            <h1>PAGO</h1>
+            <h1 id="h1Form">PAGO</h1>
             <br>
-            <div class="important-message">
-                <p>Podés pagar el total o solo la seña según tu preferencia. Recordá que la reserva se confirma al abonar el 50% de la seña.</p>
+            <br>
+            <br>
+
+            <div class="important-message" id="msjPago">
+                <p>Podés pagar el total o solo la seña según tu preferencia. Recordá que la reserva se confirma al
+                    abonar el 50% de la seña.</p>
             </div>
 
-            <div class="important-message">
+            <div class="important-message" id="msjPago">
                 <div class="totalYsena">
                     <h4>TOTAL A PAGAR: <span id="total-pago"></span></h4>
                     <h4>Seña del 50%: <span id="sena-50"></span></h4>
                 </div>
             </div>
 
-            
-
             <div class="payment-info">
                 <p>Pagá por transferencia:</p>
-                <div class="important-message">
+                <div class="important-message" id="msjPago">
                     <p><strong>ALIAS:</strong> mi.alias.mp</p>
                     <p><strong>CBU:</strong> 0020222002</p>
                 </div>

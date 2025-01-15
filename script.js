@@ -199,6 +199,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.getElementById("comprobante").addEventListener("change", function() {
+    const fileName = this.files.length > 0 ? this.files[0].name : "Sin archivos seleccionados";
+    document.querySelector(".file-upload-message").textContent = fileName;
+});
+
+
+
+
+
+
+
 
 
 
