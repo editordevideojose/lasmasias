@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
+    // SEÑA Y TOTAL A PAGAR :
 document.addEventListener("DOMContentLoaded", function () {
     // Seleccionamos los elementos del DOM
     const cabanaSelect = document.getElementById("cabana");
@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
+    // BOTON ADJUNTAR ARCHIVO:
 document.getElementById("comprobante").addEventListener("change", function() {
     const fileName = this.files.length > 0 ? this.files[0].name : "Sin archivos seleccionados";
     document.querySelector(".file-upload-message").textContent = fileName;
@@ -208,7 +208,49 @@ document.getElementById("comprobante").addEventListener("change", function() {
 
 
 
+    // CHECKOUT SECCION 4
+    document.addEventListener('DOMContentLoaded', () => {
+        const section1 = document.getElementById('section-1');
+        const section3 = document.getElementById('section-3');
+        const section4 = document.getElementById('section-4');
+    
+        const reservarAhoraBtn = section3.querySelector('.submit-btn');
+        const finalizarBtn = document.getElementById('finalizar-btn');
+    
+        reservarAhoraBtn.addEventListener('click', () => {
+            // Capturar los datos ingresados
+            const nombreReserva = document.getElementById('nombre-reserva').value;
+            const fechaEntrada = document.getElementById('fecha-entrada').value;
+            const fechaSalida = document.getElementById('fecha-salida').value;
+            const cabana = document.getElementById('cabana').value;
+            const noches = document.getElementById('nights').value;
+    
+            // Mostrar el resumen en la Sección 4
+            document.getElementById('resumen-nombre').textContent = nombreReserva || 'No especificado';
+            document.getElementById('resumen-fecha-entrada').textContent = fechaEntrada || 'No especificado';
+            document.getElementById('resumen-fecha-salida').textContent = fechaSalida || 'No especificado';
+            document.getElementById('resumen-cabana').textContent = cabana || 'No especificado';
+            document.getElementById('resumen-noches').textContent = noches || 'No especificado';
+    
+            // Ocultar Sección 3 y mostrar Sección 4
+            section3.style.display = 'none';
+            section4.style.display = 'block';
+        });
+    
+        finalizarBtn.addEventListener('click', () => {
+            // Redirigir al archivo index.html
+            window.location.href = 'index.html';
+        });
+    });
+    
 
+
+
+
+
+
+
+    
 
 
 

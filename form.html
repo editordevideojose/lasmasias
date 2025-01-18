@@ -47,7 +47,7 @@
         </div>
 
 
-
+        <!-- Sección 2: Datos de los Huéspedes -->
         <div class="form-section" id="section-2">
             <h1 id="h1Form">Datos de los Huéspedes</h1>
             <br>
@@ -74,7 +74,7 @@
                     </select>
 
                     <div class="file-upload-wrapper">
-                        
+
                         <label for="foto-dni-huesped1" class="file-upload-btn">Adjuntá foto o PDF del DNI</label>
                         <input type="file" id="foto-dni-huesped1" name="huesped-foto-dni1">
                         <span class="file-upload-message">Sin archivos seleccionados</span>
@@ -123,14 +123,8 @@
                 </p>
             </div>
 
-            <div class="alert-message">
-                <p> <i class="fa fa-exclamation-triangle"></i> Antes del ingreso, te recomendamos leer el reglamento del
-                    Club de Pescadores.</p>
-                <a href="Reglamento-ClubDePescadores.pdf" class="download-btn" download>Descargar Reglamento</a>
-            </div>
             <button type="button" class="continue-btn" id="continue-btn" data-next="3">Continuar al pago</button>
         </div>
-
 
 
 
@@ -140,7 +134,6 @@
             <br>
             <br>
             <br>
-
             <div class="important-message" id="msjPago">
                 <p>Podés pagar el total o solo la seña según tu preferencia. Recordá que la reserva se confirma al
                     abonar la seña del 50%.</p>
@@ -154,7 +147,7 @@
             </div>
 
             <div class="payment-info">
-                <p>Pagá por transferencia:</p>
+                <p>Pagá la seña o el total por transferencia:</p>
                 <div class="important-message" id="msjPago">
                     <p><strong>ALIAS:</strong> mi.alias.mp</p>
                     <p><strong>CBU:</strong> 0020222002</p>
@@ -172,14 +165,38 @@
             <button type="button" class="submit-btn">RESERVAR AHORA</button>
         </div>
 
-        <!-- Modal -->
-        <div id="confirmation-modal" class="modal">
-            <div class="modal-content">
-                <h2>¡Reserva confirmada!</h2>
-                <p>No es necesaria ninguna acción de tu parte.</p>
-                <button id="finalize-btn">Finalizar</button>
+
+        <!-- Sección 4: Reserva Confirmada -->
+        <div class="form-section" id="section-4" style="display: none;">
+            <h1 id="h1Form">¡Reserva confirmada!</h1>
+            <br>
+            <br>
+            <br>
+            <div class="important-message" id="msjPago">
+                <p>Resumen de tu reserva:</p>
+            <ul>
+                <li>A nombre de: <strong><span id="resumen-nombre"></span></strong> </li>
+                <li>Fecha de ingreso: <strong><span id="resumen-fecha-entrada"></span></strong></li>
+                <li>Fecha de salida: <strong><span id="resumen-fecha-salida"></span></strong></li>
+                <li>Cabaña: <strong><span id="resumen-cabana"></span></strong></li>
+                <li>Noches: <strong><span id="resumen-noches"></span></strong></li>
+            </ul>
             </div>
+            
+            <div class="important-message" id="msjPago">
+                <p>    <i class="fas fa-key"></i>
+                    Para ingresar, encontrarás la llave de la cabaña en la churrasquera de la misma, debajo de la piedra.
+                </p>
+            </div>
+            <div class="alert-message">
+                <p> <i class="fa fa-exclamation-triangle"></i> Antes del ingreso, te recomendamos leer el reglamento del
+                    Club de Pescadores.</p>
+                <a href="Reglamento-ClubDePescadores.pdf" class="download-btn" download>Descargar Reglamento</a>
+            </div>
+            <button type="button" id="finalizar-btn">FINALIZAR</button>
         </div>
+
+
 
     </div>
 
