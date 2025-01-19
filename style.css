@@ -32,10 +32,11 @@ body {
     top: 0;
     left: 0;
     width: 98vw;
-    background-color: aliceblue;
-    z-index: 10;
+    height: auto;
+    background-color: #007BFF;
+    z-index: 9;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: 50px; /* Define una altura fija */
+    height: 65px; /* Define una altura fija */
     overflow: hidden; /* Oculta cualquier desbordamiento */
     font-size: 70%;
     padding: 5px;
@@ -44,18 +45,25 @@ body {
 }
 
 .containerTiempo {
-    margin-top: 30px;
-    width: 25%;
-    
+    width: 35%;
+    padding: 20px 0;
+    z-index: 11;
+    background-color: transparent;
+    position: relative;
 }
 
-.tiempo {
+.tiempo2 {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #007BFF;
+    color: #000000;
+    font-size: 105%;
+    z-index: 11;
+    text-align: center;
 }
+
 
 .barras {
     width: 75%;
@@ -67,7 +75,6 @@ body {
 }
 
 .barra1, .barra {
-    background-color: rgba(240, 248, 255, 0.9); /* Ajusta el color de fondo */
     color: black;
     font-size: 12px;
     display: flex;
@@ -79,16 +86,12 @@ body {
 }
 
 
-
-
-
-
-.aqui {
+/* .aqui {
     background-color: gold;
     border-radius: 5px;
     padding: 2px 4px;
     margin-left: 3px;
-}
+} */
 
 
 .titulo {
@@ -104,6 +107,9 @@ body {
         font-weight: 400;
 
     }
+    /* h1{
+        font-size: 220%;
+    } */
 
 }
 
