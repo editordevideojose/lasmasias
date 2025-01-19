@@ -36,8 +36,10 @@ body {
     background-color: #007BFF;
     z-index: 9;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: 65px; /* Define una altura fija */
-    overflow: hidden; /* Oculta cualquier desbordamiento */
+    height: 65px;
+    /* Define una altura fija */
+    overflow: hidden;
+    /* Oculta cualquier desbordamiento */
     font-size: 70%;
     padding: 5px;
     border-bottom-right-radius: 10px;
@@ -60,7 +62,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: aliceblue;
+    background-color: aliceblue;
+    color: #007BFF;
     font-size: 105%;
     z-index: 11;
     text-align: center;
@@ -78,15 +81,18 @@ body {
 
 }
 
-.barra1, .barra {
+.barra1,
+.barra {
     color: aliceblue;
     font-size: 12px;
     display: flex;
-    align-items: center; /* Centra verticalmente el contenido */
+    align-items: center;
+    /* Centra verticalmente el contenido */
 }
 
 .barra i {
-    margin-right: 5px; /* Espaciado entre el icono y el texto */
+    margin-right: 5px;
+    /* Espaciado entre el icono y el texto */
 }
 
 
@@ -111,6 +117,7 @@ body {
         font-weight: 400;
 
     }
+
     /* h1{
         font-size: 220%;
     } */
@@ -175,7 +182,7 @@ body {
     width: 50%;
     padding: 15px 10px;
     border-radius: 5px;
-    background-color: aliceblue ;
+    background-color: aliceblue;
     color: #007BFF;
     text-align: center;
     margin: 0 0 40px 0;
@@ -192,44 +199,67 @@ body {
 }
 
 
+/* 3 CARACTERISTICAS */
 .caracteristicas {
     display: flex;
-    justify-content: center; /* Centra los círculos horizontalmente */
-    gap: 20px; /* Espaciado entre los círculos */
-    margin: 20px 0 20px 0; /* Margen superior opcional */
+    justify-content: center;
+    /* Centra los círculos horizontalmente */
+    gap: 20px;
+    /* Espaciado entre los círculos */
+    margin: 20px 0 20px 0;
+    /* Margen superior opcional */
 }
 
 .circle {
     display: flex;
-    flex-direction: column; /* Coloca ícono y texto en una columna */
+    flex-direction: column;
+    /* Coloca ícono y texto en una columna */
     justify-content: center;
     align-items: center;
-    width: 65px; /* Ancho del círculo */
-    height: 65px; /* Alto del círculo */
-    border-radius: 50%; /* Hace el contenedor circular */
-    background-color: #f4f4f4; /* Color de fondo */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
-    text-align: center; /* Alinea el texto en el centro */
-    padding: 10px; /* Espaciado interno */
+    width: 65px;
+    /* Ancho del círculo */
+    height: 65px;
+    /* Alto del círculo */
+    border-radius: 50%;
+    /* Hace el contenedor circular */
+    background-color: #f4f4f4;
+    /* Color de fondo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra opcional */
+    text-align: center;
+    /* Alinea el texto en el centro */
+    padding: 10px;
+    /* Espaciado interno */
 }
 
 .circle i {
-    font-size: 14px; /* Tamaño del ícono */
-    color: #007BFF; /* Color del ícono */
-    margin-bottom: 4px; /* Espaciado entre el ícono y el texto */
+    font-size: 14px;
+    /* Tamaño del ícono */
+    color: #007BFF;
+    /* Color del ícono */
+    margin-bottom: 4px;
+    /* Espaciado entre el ícono y el texto */
 }
 
 .circle h5 {
-    font-size: 12px; /* Tamaño del texto */
-    margin: 0; /* Elimina margen del h5 */
-    color: #333; /* Color del texto */
-    text-align: center; /* Alinea el texto al centro */
-    line-height: 1.2; /* Ajusta la separación entre líneas */
+    font-size: 12px;
+    /* Tamaño del texto */
+    margin: 0;
+    /* Elimina margen del h5 */
+    color: #333;
+    /* Color del texto */
+    text-align: center;
+    /* Alinea el texto al centro */
+    line-height: 1.2;
+    /* Ajusta la separación entre líneas */
 }
 
 .circle h5 span {
-    font-weight: 600; /* Hace que el texto sea más visible */
+    font-weight: 600;
+    /* Hace que el texto sea más visible */
 }
+
+
 
 
 
@@ -299,107 +329,6 @@ body {
 
 
 
-  
-
-  
-
-  /* TARJETAS///////////////////////////////////////////// */
-.carousel {
-    position: relative;
-    width: 95%;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
-  }
-
-  .carousel-images {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .carousel-images img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-  }
-
-  .carousel-dots {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 5px;
-  }
-
-  .carousel-dots button {
-    width: 10px;
-    height: 10px;
-    border: none;
-    border-radius: 50%;
-    background-color: #ccc;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-
-  .carousel-dots button.active {
-    background-color: #333;
-  }
-
-  .tarjetas{
-    width: 90vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .tarjeta{
-    width: 90%;
-    margin: 15px 0px;
-    padding: 10px;
-    border: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(to bottom, #f5f5f5, #ffffff);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .btnVermas{
-    border-radius: 5px;
-    color: aliceblue;
-    background-color: #007BFF;
-    padding: 10px;
-    margin: 10px 0px;
-    width: 90%;
-    text-align: center;
-  } 
-  
-  .icon-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px; /* Espacio entre los iconos */
-    padding: 10px;
-  }
-
-  .icon-container i {
-    font-size: 15px;
-    color: #333; /* Color inicial de los iconos */
-    cursor: pointer; /* Cambiar el cursor al pasar por el icono */
-    transition: color 0.3s ease;
-  }
-
-  .icon-container i:hover {
-    color: #007BFF; /* Color de los iconos al pasar el mouse */
-  }
-
-  
-  
-  
-  
 
 
 
@@ -407,7 +336,17 @@ body {
 
 
 
-  .card {
+
+
+
+
+
+
+
+
+
+/* FORMULARIO */
+.card {
     border: 1px solid #ccc;
     padding: 20px;
     width: 300px;
@@ -455,17 +394,3 @@ button {
 button:hover {
     background-color: #218838;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
