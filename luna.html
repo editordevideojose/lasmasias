@@ -1,31 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styleCabana.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
-    <div class="card">
-        <h3>Título del paquete</h3>
-        <div class="nights-container">
-            <label for="nights">Cantidad de noches:</label>
-            <input type="number" id="nights" min="1" value="1" onchange="calculateTotal()">
-        </div>
-        <div class="total">
-            <p>Total: $<span id="total">100</span></p>
-        </div>
-        <p class="reminder">Recuerda que solo puedes reservar si consultaste disponibilidad previamente.</p>
-        <!-- Enlace al form.html al hacer clic en el botón -->
-        <a href="form.html">
-            <button class="btnVermas">Iniciar reserva</button>
-        </a>
-    </div>
-    
-    <script src="cabana.js"></script>
 
+<body>
+
+    <div id="cabana">
+        <div class="container">
+            <div id="cabanaNombre" class="title">
+                <h2>Masía de la Luna</h2>
+                <h4><i class="fas fa-user"></i> 6/7 personas</h4>
+            </div>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.24 (1).jpeg" alt="Imagen 1">
+                    <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.24.jpeg" alt="Imagen 2">
+                    <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.25 (1).jpeg" alt="Imagen 3">
+                    <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.25.jpeg" alt="Imagen 4">
+                    <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.26 (1).jpeg" alt="Imagen 5">
+                    <img src="img/Luna/WhatsApp Image 2025-01-10 at 13.32.26.jpeg" alt="Imagen 6">
+                </div>
+                <div class="carousel-dots"></div>
+            </div>
+            
+            <div class="barraImportante">
+                <div>
+                    <p>Check in: <strong>12:00</strong></p>
+                </div>
+                <div>
+                    |
+                </div>
+                <div>
+                    <p>Check out: <strong>15:00</strong></p>
+                </div>
+                
+            </div>
+
+            <div class="description">
+                Relájate en la acogedora Cabaña Luna, ideal para escapadas familiares o con amigos. Disfruta de la
+                naturaleza, la comodidad y los mejores servicios para una experiencia inolvidable.
+            </div>
+
+            <div class="services">
+                <div class="services-title">Servicios incluidos:</div>
+                <div class="containerIconos">
+                    <div class="icon-container">
+                        <div class="service"><i class="fas fa-wifi"></i>WiFi</div>
+                        <div class="service"><i class="fas fa-utensils"></i>Cocina equipada</div>
+                        <div class="service"><i class="fas fa-car"></i>2 Cocheras</div>
+                        <div class="service"><i class="fas fa-bed"></i>2 habitaciones</div>
+                        <div class="service"><i class="fas fa-bath"></i>1 baño y antebaño</div>
+                        <div class="service"><i class="fas fa-chair"></i>Reposeras y mesita</div>
+                        <div class="service"><i class="fas fa-drumstick-bite"></i>Parrilla</div>
+
+                    </div>
+                    <div class="icon-container">
+                        <div class="service"><i class="fas fa-tv"></i>TV por cable</div>
+                        <div class="service"><i class="fas fa-kitchen-set"></i>
+                            Vajilla completa</div>
+                        <div class="service"><i class="fas fa-mug-hot"></i>Pava eléctrica</div>
+                        <div class="service"><i class="fas fa-basket"></i>Microondas</div>
+                        <div class="service"><i class="fas fa-bath"></i>Estufa eléctrica</div>
+                        <div class="service"><i class="fas fa-fire"></i>Estufa hogar</div>
+                        <div class="service"><i class="fas fa-fan"></i>Ventilador</div>
+                    </div>
+                </div>
+                <div class="service"><i class="fas fa-ban"></i>No se admiten mascotas</div>
+                    <div class="service"><i class="fas fa-info-circle"></i>
+                        No incluye ropa de blanco</div>
+            </div>
+        </div>
+
+
+
+        <div class="precioNoche">
+            <p><strong>$100</strong> la noche</p>
+        </div>
+        
+        <a class="btnDisponibilidad2" href="https://wa.me/5492604404444?text=Hola!%20Quiero%20saber%20si%20hay%20disponibilidad%20para%20la%20fecha:%20y%20para%20la%20cantidad%20de%20personas:
+            ">
+            <i class="fab fa-whatsapp"></i>
+ Consultar disponibilidad</a>
+
+        <p class="siYaConsultaste">Si ya consultaste disponibilidad:</p>
+        <a class="btnReservar2" href="form.html" target="_blank">
+            <i class="fa fa-calendar-check"></i> RESERVAR
+        </a>
+
+    </div>
+
+
+
+    <script src="cabana.js"></script>
 </body>
+
 </html>
