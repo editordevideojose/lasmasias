@@ -138,9 +138,9 @@ document.addEventListener("DOMContentLoaded", function () {
         let pricePerNight = 0;
 
         if (cabanaValue === "masia-cielo") {
-            pricePerNight = 100;
+            pricePerNight = 70000;
         } else if (cabanaValue === "masia-luna") {
-            pricePerNight = 200;
+            pricePerNight = 80000;
         }
 
         const total = nightsValue * pricePerNight;
@@ -176,9 +176,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Asignamos el precio por noche según la cabaña
         if (cabanaValue === "masia-cielo") {
-            pricePerNight = 100; // Precio por noche para masia-cielo
+            pricePerNight = 70000; // Precio por noche para masia-cielo
         } else if (cabanaValue === "masia-luna") {
-            pricePerNight = 200; // Precio por noche para masia-luna
+            pricePerNight = 80000; // Precio por noche para masia-luna
         }
 
         const total = nightsValue * pricePerNight; // Total a pagar
