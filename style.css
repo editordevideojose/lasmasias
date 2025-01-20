@@ -64,7 +64,7 @@ body {
     top: 25px; /* Justo debajo de .barraExcursiones */
     left: 0;
     width: 100vw;
-    height: 85px;
+    height: 60px;
     background-color: #007BFF;
     z-index: 9;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -85,8 +85,8 @@ body {
 }
 
 .tiempo1 {
-    width: 65px;
-    height: 65px;
+    width: 45px;
+    height: 45px;
     display: flex;
     flex-direction: column;
     align-items: center;
