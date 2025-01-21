@@ -77,3 +77,11 @@ button{
     border-radius: 5px;
     padding: 10px 30px;
 }
+
+#velero, #pesca{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+}
