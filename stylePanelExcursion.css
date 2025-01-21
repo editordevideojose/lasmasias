@@ -5,10 +5,14 @@
     font-family: 'Lato', sans-serif;
 }
 
+body{
+    z-index: -4;
+}
+
 .h1titulo{
     position: absolute;
     width: 100%;
-    height: 50px;
+    height:60px;
     background-color: rgb(35, 35, 35);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -27,7 +31,7 @@
     height: 25%;
     z-index: -1;
     overflow: hidden;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .video-background video {
@@ -42,13 +46,25 @@
     bottom: 10%; /* Ajusta la distancia desde la parte inferior */
     left: 50%; /* Centra horizontalmente */
     transform: translateX(-50%); /* Corrección para centrar perfectamente */
-    background-color: rgba(240, 248, 255, 0.7); /* Fondo semitransparente */
-    border-radius: 5px; /* Bordes redondeados */
-    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px;
     text-align: center;
-    color: #000; /* Color del texto */
+    color: aliceblue;
     z-index: 1; /* Asegúrate de que esté por encima del video */
-    width: 50%; /* Ajusta el ancho del mensaje */
+    width: 70%; /* Ajusta el ancho del mensaje */
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    gap: 15px;
+    p{
+        background-color: rgba(35, 35, 35, 0.564);
+        padding: 3px;
+        border-radius: 5px;
+
+    }
+
 }
 
 .infoExcursion{
@@ -62,13 +78,27 @@
 
 .excursionIncluye{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 20px;
-    background-color: darkgrey;
+    background-color: rgb(228, 228, 228);
     border-radius: 5px;
     margin: 10px 0;
-    gap: 4px;
+    width: 90%;    
 }
+
+.incluye{
+    gap: 4px;
+    font-size: 14px;
+    width: 40%;
+}
+
+.incluye1{
+    gap: 4px;
+    font-size: 14px;
+    width: 60%;
+}
+
+
 
 .precioExcursion{
     border: solid 1px black;
@@ -92,5 +122,16 @@
 
 .infoDisponibilidad{
     font-weight: 300;
-    margin: 0 0 10px 0;
+    margin: 20px 0 30px 0;
+}
+
+.copy{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 10px 0px 20px 0px;
+}
+
+.navega{
+    font-size: 140%;
 }
