@@ -15,16 +15,15 @@ body {
 
 .excursiones{
     display: flex;
-    height: 25vh;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 .excursion {
     position: relative; /* Para que el contenido esté en relación con este contenedor */
     width: 100%;
-    height: 25vh; /* Ajusta el tamaño según sea necesario */
+    height: 25%; /* Ajusta el tamaño según sea necesario */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -83,5 +82,8 @@ button{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    video{
+        transform: scaleX(-1);
+    }
 
 }
