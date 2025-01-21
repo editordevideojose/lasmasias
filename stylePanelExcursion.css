@@ -6,15 +6,17 @@
 }
 
 .h1titulo{
+    position: absolute;
     width: 100%;
     height: 50px;
-    background-color: bisque;
+    background-color: rgb(35, 35, 35);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
+    color: aliceblue;
 }
 
 .video-background {
@@ -25,6 +27,7 @@
     height: 25%;
     z-index: -1;
     overflow: hidden;
+    padding-top: 10px;
 }
 
 .video-background video {
@@ -63,12 +66,16 @@
     padding: 20px;
     background-color: darkgrey;
     border-radius: 5px;
+    margin: 10px 0;
+    gap: 4px;
 }
 
 .precioExcursion{
     border: solid 1px black;
     border-radius: 5px;
-    padding: 10px 30px;
+    padding: 15px 20px;
+    width: 89%;
+    text-align: center;
 }
 
 .btnReservar{
@@ -81,4 +88,9 @@
     justify-content: center;
     margin: 10px 0px 20px 0px;
     color: aliceblue;
+}
+
+.infoDisponibilidad{
+    font-weight: 300;
+    margin: 0 0 10px 0;
 }
