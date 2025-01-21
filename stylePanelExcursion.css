@@ -5,10 +5,6 @@
     font-family: 'Lato', sans-serif;
 }
 
-body{
-    z-index: -4;
-}
-
 .h1titulo{
     position: absolute;
     width: 100%;
@@ -31,7 +27,7 @@ body{
     height: 25%;
     z-index: -1;
     overflow: hidden;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 .video-background video {
@@ -43,7 +39,7 @@ body{
 
 .msjVideo {
     position: absolute; /* Para superponerlo sobre el video */
-    bottom: 10%; /* Ajusta la distancia desde la parte inferior */
+    bottom: 15%; /* Ajusta la distancia desde la parte inferior */
     left: 50%; /* Centra horizontalmente */
     transform: translateX(-50%); /* Corrección para centrar perfectamente */
     border-radius: 5px;
@@ -82,7 +78,7 @@ body{
     padding: 20px;
     background-color: rgb(228, 228, 228);
     border-radius: 5px;
-    margin: 10px 0;
+    margin: 5px 0;
     width: 90%;    
 }
 
@@ -97,8 +93,6 @@ body{
     font-size: 14px;
     width: 60%;
 }
-
-
 
 .precioExcursion{
     border: solid 1px black;
@@ -136,4 +130,16 @@ body{
 
 .navega{
     font-size: 140%;
+    margin-top: 5px;
+}
+
+.rectanguloBlanco{
+    width: 100%;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-top: 4px;
+    z-index: 5;
+    background-color: rgb(255, 255, 255);
+    margin-top: -19px;
 }
