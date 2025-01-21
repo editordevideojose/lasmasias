@@ -131,6 +131,7 @@ body{
     flex-direction: column;
     justify-content: left;
     margin: 10px 0px 20px 0px;
+    width: 100%;
 }
 
 .navega{
