@@ -353,7 +353,8 @@ body {
 
 .serviciosClub{
     width: 60%;
-    background-color: #c0c0c0;
+    background-color: #0057b31e;
+
     border-radius: 5px;
     padding: 12px;
     margin: 10px 0;
@@ -366,11 +367,10 @@ body {
 }
 
 .avisoReglamento{
-    width: 100%;
-    border: solid 1px black;
+    background-color: #ededed;
     border-radius: 5px;
     padding: 10px;
-    margin: 10px 0 0 0;
+    margin: 0 2px 15px 2px;
 }
 
 
@@ -464,13 +464,14 @@ button:hover {
     p{
         font-size: 14px;
     }
+    .noPermitido{
+        text-decoration: underline;
+        padding: 5px 0;
+    }
     .prohibido{
         text-align: left;
-        padding: 10px;
-        span{
-            text-decoration: underline;
-        }
     }
+    
 }
 
 hr{
