@@ -337,32 +337,41 @@ body {
     background-color: #0056b3;
 }
 
-.club{
-    width: 90%;
+
+
+
+
+
+
+
+
+
+.carouselClub{
+    width: 100% !important;
+    border-radius: 0% !important;
+}
+.serviciosDelClub{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px 0 20px 0;
-    text-align: justify;
-    color: #333;
-    h2{
-        margin-bottom: 10px;
-    }
-}
-
-.serviciosClub{
-    width: 60%;
     background-color: #0057b31e;
-
     border-radius: 5px;
-    padding: 12px;
-    margin: 10px 0;
+    padding: 15px 0 20px 0;
     h3{
         margin: 0 0 5px 0;
     }
     p{
         font-size: 14px;
+    }
+    .listaQueIncluye{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
     }
 }
 
@@ -370,7 +379,9 @@ body {
     background-color: #ededed;
     border-radius: 5px;
     padding: 10px;
-    margin: 0 2px 15px 2px;
+    text-align: justify;
+    margin-top: -10px;
+    color: #686868;
 }
 
 
@@ -453,7 +464,7 @@ button:hover {
 
 .horarioSilencio{
     width: 60%;
-    background-color: #c0c0c0;
+    background-color: #fff1d2;
     border-radius: 5px;
     padding: 12px;
     margin: 10px 0;
