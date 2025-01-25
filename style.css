@@ -34,7 +34,7 @@ body {
     display: flex;
     flex-direction: row;
     color: #007BFF;
-    padding: 5px 0;
+    padding: 10px 0;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -42,8 +42,11 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
-    height: 25px; /* Asegúrate de definir la altura */
+    height: 40px;
     font-size: 12px;
+    gap: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 
@@ -61,7 +64,8 @@ body {
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 25px; /* Justo debajo de .barraExcursiones */
+    top: 25px;
+    /* Justo debajo de .barraExcursiones */
     left: 0;
     width: 100vw;
     height: 60px;
@@ -74,7 +78,7 @@ body {
 }
 
 
-.containerTiempo {
+/* .containerTiempo {
     width: 30%;
     padding: 20px 0;
     z-index: 11;
@@ -82,9 +86,34 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
+} */
+
+.containerTiempo2{
+    z-index: 11;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.tiempo3 {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #007BFF;
+    color: aliceblue;
+    font-size: 105%;
+    z-index: 11;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 85%;
+    padding: 2px;
 }
 
-.tiempo1 {
+
+/* .tiempo1 {
     width: 45px;
     height: 45px;
     display: flex;
@@ -99,8 +128,7 @@ body {
     border: solid 1px aliceblue;
     border-radius: 50%;
     font-size: 65%;
-
-}
+} */
 
 .barras {
     width: 75%;
@@ -119,7 +147,8 @@ body {
     align-items: center;
 }
 
-.barra i, .barras i {
+.barra i,
+.barras i {
     margin-right: 5px;
 }
 
@@ -346,29 +375,39 @@ body {
 
 
 
-.carouselClub{
+
+.carouselClub {
     width: 90% !important;
     border-radius: 0% !important;
     border-top-left-radius: 10px !important;
     border-top-right-radius: 10px !important;
 }
-.serviciosDelClub{
+
+.serviciosDelClub {
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #0057b31e;
+    background-color: aliceblue;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 15px 0 0 0;
-    h3{
+
+    h3 {
         margin: 0 0 5px 0;
+        color: #0156B3;
     }
-    p{
+
+    i{
+        color: #0156B3;
+    }
+
+    p {
         font-size: 14px;
     }
-    .listaQueIncluye{
+
+    .listaQueIncluye {
         width: 60%;
         display: flex;
         flex-direction: column;
@@ -378,8 +417,64 @@ body {
     }
 }
 
-.avisoReglamento{
-    background-color: #ededed;
+
+hr {
+    margin-top: 10px;
+}
+
+.horarioSilencio {
+    width: 100%;
+    background-color: #fef7e7;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 10px 0 0 0;
+    padding: 20px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+        margin: 0 0 5px 0;
+    }
+
+    p {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+    .prohibido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        i{
+            color: rgb(0, 0, 0);
+        }
+    }
+
+    .noPermitido {
+        text-decoration: underline;
+        margin: 5px 0 0 0;
+        padding: 5px 20px;
+        text-align: left;
+    }
+
+    .itemsNopermitidos{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+            
+    }
+
+    
+
+}
+
+
+.avisoReglamento {
+    background-color: aliceblue;
     border-radius: 5px;
     padding: 10px;
     text-align: justify;
@@ -460,38 +555,4 @@ button {
 
 button:hover {
     background-color: #218838;
-}
-
-
-
-
-.horarioSilencio{
-    width: 100%;
-    background-color: #fff1d2;
-border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;
-    margin: 10px 0 0 0;
-    padding: 20px 0px;
-    border-top: 1px solid black;
-    text-align: center;
-    h3{
-        margin: 0 0 5px 0;
-    }
-    p{
-        font-size: 14px;
-        padding: 0 20px;
-    }
-    .noPermitido{
-        text-decoration: underline;
-        padding: 5px 20px;
-
-    }
-    .prohibido{
-        text-align: left;
-    }
-    
-}
-
-hr{
-    margin-top: 10px;
 }
