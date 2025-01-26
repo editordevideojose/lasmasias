@@ -45,10 +45,12 @@ body {
     margin-bottom: 20px;
     z-index: 12;
     gap: 5px;
-    h2{
+
+    h2 {
         font-size: 110%;
     }
-    h4{
+
+    h4 {
         color: aliceblue;
         margin: 0 auto;
         z-index: 12;
@@ -65,13 +67,11 @@ body {
 }
 
 .carousel {
-    position: relative;
-    width: 100%;
+    width: 100vw;
     height: 200px;
-    overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 100px 0 20px 0;
+    margin: 70px 0 0 0;
 }
 
 .carousel-images {
@@ -108,23 +108,26 @@ body {
     background-color: #333;
 }
 
+
+
 .barraImportante {
-background-color: #007BFF;
-    border-radius: 5px;
+    width: 100%;
+    background-color: #007BFF;
     color: aliceblue;
+    gap: 15px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
-    gap: 15px;
     justify-content: center;
     align-content: center;
-    padding: 10px;
+    margin: 0 auto;
 }
 
 .services {
     margin: 20px 0 20px 0;
     display: flex;
     flex-direction: column;
-    background-color: #ccc;
+    background-color: #e6e6e6;
     border-radius: 5px;
     padding: 5px;
 
@@ -166,11 +169,12 @@ background-color: #007BFF;
     color: #555;
 }
 
-.precioNoche{
+.precioNoche {
     width: 100%;
-    background-color: rgb(207, 207, 207);
+    background-color: #e6e6e6;
     border-radius: 5px;
-    p{
+
+    p {
         padding: 10px;
     }
 }
@@ -185,12 +189,13 @@ background-color: #007BFF;
     text-align: center;
     margin: 15px 0px;
     justify-content: center;
-    i{
+
+    i {
         margin-right: 5px;
     }
 }
 
-.siYaConsultaste{
+.siYaConsultaste {
     text-align: center;
 }
 
@@ -204,11 +209,12 @@ background-color: #007BFF;
     text-align: center;
     margin: 10px 0 40px 0;
     justify-content: center;
-    i{
+
+    i {
         margin-right: 5px;
     }
 }
 
-.iconoVerde{
+.iconoVerde {
     color: green !important;
 }

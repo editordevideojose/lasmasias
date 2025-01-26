@@ -15,7 +15,7 @@ function getWeather() {
             const temperature = data.main.temp;
             const condition = data.weather[0].description;
             document.getElementById("weather").innerHTML = `
-                <p>${temperature}°C</p>
+             <strong><p>${temperature}°C</p></strong>
             <!-- <p>${condition}</p> -->
             `;
         })
