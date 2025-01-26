@@ -1,3 +1,4 @@
+//CLIMA//////////////////////////////////////////////////////////////
 const apiKey = "2eaa3fe5d97159a3e224bd4072d2ee5b";  // Nueva API Key
 const lat = -35.029795;  // Latitud de El Nihuil
 const lon = -68.697099;  // Longitud de El Nihuil
@@ -31,9 +32,8 @@ window.onload = getWeather;
 
 
 
-
+//FORM: DATOS DE HUESPEDES//////////////////////////////////////////////////////////////
 const huespedesContainer = document.getElementById('huespedes');
-
 // Eliminar cualquier contenido previo en el contenedor
 huespedesContainer.innerHTML = '';
 
@@ -92,33 +92,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    const nightsSelect = document.getElementById("nights");
 
-    // Generar opciones del select de 1 a 15
-    for (let i = 1; i <= 15; i++) {
-        const option = document.createElement("option");
-        option.value = i;
-        option.textContent = i;
-        nightsSelect.appendChild(option);
-    }
-});
-
-
-
-
-
-
-
-// CAALCULADORA DE NOCHES Y PRECIO TOTAL A PAGAR
+// CALCULADORA DE NOCHES Y PRECIO TOTAL A PAGAR
 document.addEventListener("DOMContentLoaded", function () {
     // Seleccionamos los elementos del DOM
     const cabanaSelect = document.getElementById("cabana");
     const nightsSelect = document.getElementById("nights");
+    const ropaSelect = document.getElementById("ropa");  // Nuevo select
     const totalDisplay = document.createElement("h3");
 
     // Agregamos el elemento para mostrar el total
     const nightsContainer = document.querySelector(".nights-select");
+
     totalDisplay.textContent = "TOTAL A PAGAR: $0";
     nightsContainer.appendChild(totalDisplay);
 
@@ -134,8 +119,10 @@ document.addEventListener("DOMContentLoaded", function () {
     function calculateTotal() {
         const cabanaValue = cabanaSelect.value;
         const nightsValue = parseInt(nightsSelect.value) || 0;
+        const ropaValue = parseInt(ropaSelect.value) || 0;  // Valor de ropa de blanco
 
         let pricePerNight = 0;
+        let additionalPriceForRopa = ropaValue * 100;  // 100 por cada persona
 
         if (cabanaValue === "masia-cielo") {
             pricePerNight = 70000;
@@ -143,14 +130,16 @@ document.addEventListener("DOMContentLoaded", function () {
             pricePerNight = 80000;
         }
 
-        const total = nightsValue * pricePerNight;
+        const total = (nightsValue * pricePerNight) + additionalPriceForRopa;
         totalDisplay.textContent = `TOTAL A PAGAR: $${total}`;
     }
 
     // Añadimos los event listeners para actualizar el cálculo
     cabanaSelect.addEventListener("change", calculateTotal);
     nightsSelect.addEventListener("change", calculateTotal);
+    ropaSelect.addEventListener("change", calculateTotal);  // Evento para el nuevo select
 });
+
 
 
 
@@ -164,6 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Seleccionamos los elementos del DOM
     const cabanaSelect = document.getElementById("cabana");
     const nightsSelect = document.getElementById("nights");
+    const ropaSelect = document.getElementById("ropa");  // Nuevo select
     const totalPagoDisplay = document.getElementById("total-pago");
     const sena50Display = document.getElementById("sena-50");
 
@@ -171,8 +161,10 @@ document.addEventListener("DOMContentLoaded", function () {
     function calculateTotal() {
         const cabanaValue = cabanaSelect.value;
         const nightsValue = parseInt(nightsSelect.value) || 0;
+        const ropaValue = parseInt(ropaSelect.value) || 0;  // Valor de ropa de blanco
 
         let pricePerNight = 0;
+        let additionalPriceForRopa = ropaValue * 100;  // 100 por cada persona
 
         // Asignamos el precio por noche según la cabaña
         if (cabanaValue === "masia-cielo") {
@@ -181,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
             pricePerNight = 80000; // Precio por noche para masia-luna
         }
 
-        const total = nightsValue * pricePerNight; // Total a pagar
+        const total = (nightsValue * pricePerNight) + additionalPriceForRopa; // Total a pagar
         const sena = total / 2; // Seña del 50%
 
         // Actualizamos el DOM con el total a pagar y la seña
@@ -189,10 +181,14 @@ document.addEventListener("DOMContentLoaded", function () {
         sena50Display.textContent = `$${sena}`;
     }
 
-    // Event listeners para los cambios en el selector de cabaña y noches
+    // Event listeners para los cambios en el selector de cabaña, noches y ropa de blanco
     cabanaSelect.addEventListener("change", calculateTotal);
     nightsSelect.addEventListener("change", calculateTotal);
+    ropaSelect.addEventListener("change", calculateTotal);  // Evento para el nuevo select
 });
+
+
+
 
 
 
@@ -208,7 +204,8 @@ document.getElementById("comprobante").addEventListener("change", function () {
 
 
 
-// CHECKOUT SECCION 4
+
+// SECCION 4: CHECKOUT 
 document.addEventListener('DOMContentLoaded', () => {
     const section1 = document.getElementById('section-1');
     const section3 = document.getElementById('section-3');
@@ -224,6 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const fechaSalida = document.getElementById('fecha-salida').value;
         const cabana = document.getElementById('cabana').value;
         const noches = document.getElementById('nights').value;
+        const ropa = document.getElementById('ropa').value;  // Nuevo dato de ropa de blanco
 
         // Mostrar el resumen en la Sección 4
         document.getElementById('resumen-nombre').textContent = nombreReserva || 'No especificado';
@@ -231,6 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('resumen-fecha-salida').textContent = fechaSalida || 'No especificado';
         document.getElementById('resumen-cabana').textContent = cabana || 'No especificado';
         document.getElementById('resumen-noches').textContent = noches || 'No especificado';
+        document.getElementById('resumen-ropa').textContent = `${ropa} persona(s)`;  // Mostrar la cantidad de personas con ropa de blanco
 
         // Ocultar Sección 3 y mostrar Sección 4
         section3.style.display = 'none';
@@ -242,6 +241,8 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = 'index.html';
     });
 });
+
+
 
 
 

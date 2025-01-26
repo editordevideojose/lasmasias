@@ -35,14 +35,28 @@
                     <option value="masia-cielo">Masía del Cielo (2/4 personas)</option>
                 </select>
             </div>
-            <!-- Título y selector -->
+            
+            <!-- Nuevo select para "Ropa de blanco" -->
+            <div class="ropa-select">
+                <label for="ropa">¿Ropa de blanco para cuántas personas?</label>
+                <select id="ropa" name="ropa">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+            </div>
+            <!-- Selector noches -->
             <div class="nights-select">
                 <label for="nights">¿Cuántas noches vas a alojarte?</label>
                 <select id="nights" name="nights">
                     <!-- Opciones generadas automáticamente de 1 a 15 -->
                 </select>
             </div>
-
             <button type="button" class="continue-btn" data-next="2" id="continue-btn">Continuar</button>
         </div>
 
@@ -145,7 +159,8 @@
                     <hr>
                     <h4 class="senaYsaldo textoFino">Seña 50%:&nbsp; <strong><span id="sena-50"></span></strong></h4>
                     <hr>
-                    <h4 class="senaYsaldo textoFino">Saldo 40%:&nbsp; <strong><span>se paga al ingresar</span></strong></h4>
+                    <h4 class="senaYsaldo textoFino">Saldo 50%:&nbsp; <strong><span>se paga al ingresar</span></strong>
+                    </h4>
 
                 </div>
             </div>
@@ -157,8 +172,8 @@
                     <p class="senaYsaldo">CBU: <strong class="senaYsaldo">&nbsp;0110485530048513081979</strong></p>
                 </div>
             </div>
-            <p>O pagá <strong>el total</strong> en 2 cuotas sin interés:</p>
-            <button type="button" class="pay-btn" id="pay-btn">Pagar con tarjeta</button>
+            <!-- <p>O pagá <strong>el total</strong> en 2 cuotas sin interés:</p>
+            <button type="button" class="pay-btn" id="pay-btn">Pagar con tarjeta</button> -->
             <!-- <label for="comprobante">Adjuntar comprobante de pago:</label> -->
             <div class="file-upload-wrapper">
                 <label for="comprobante" class="file-upload-btn">Adjuntar comprobante</label>
@@ -178,19 +193,23 @@
             <br>
             <div class="important-message" id="msjPago">
                 <p>Resumen de tu reserva:</p>
-            <ul>
-                <li>A nombre de: <strong class="senaYsaldo"><span id="resumen-nombre"></span></strong> </li>
-                <li>A nombre de: <strong class="senaYsaldo"><span id="resumen-nombre"></span></strong> </li>
-                <li>Fecha de ingreso: <strong class="senaYsaldo"><span id="resumen-fecha-entrada"></span></strong></li>
-                <li>Fecha de salida: <strong class="senaYsaldo"><span id="resumen-fecha-salida"></span></strong></li>
-                <li>Cabaña: <strong class="senaYsaldo"><span id="resumen-cabana"></span></strong></li>
-                <li>Noches: <strong class="senaYsaldo"><span id="resumen-noches"></span></strong></li>
-            </ul>
+                <ul>
+                    <li>A nombre de: <strong class="senaYsaldo"><span id="resumen-nombre"></span></strong> </li>
+                    <li>Fecha de ingreso: <strong class="senaYsaldo"><span id="resumen-fecha-entrada"></span></strong>
+                    </li>
+                    <li>Fecha de salida: <strong class="senaYsaldo"><span id="resumen-fecha-salida"></span></strong>
+                    </li>
+                    <li>Cabaña: <strong class="senaYsaldo"><span id="resumen-cabana"></span></strong></li>
+                    <li>Noches: <strong class="senaYsaldo"><span id="resumen-noches"></span></strong></li>
+                    <li>Ropa de blanco: <strong class="senaYsaldo"><span id="resumen-ropa"></span></strong></li> <!-- Nuevo dato -->
+
+                </ul>
             </div>
-            
+
             <div class="important-message" id="msjPago">
-                <p>    <i class="fas fa-key"></i>
-                    Para ingresar, encontrarás la llave de la cabaña en la churrasquera de la misma, debajo de la piedra.
+                <p> <i class="fas fa-key"></i>
+                    Para ingresar, encontrarás la llave de la cabaña en la churrasquera de la misma, debajo de la
+                    piedra. Al salir, recuerda dejarla en el mismo lugar.
                 </p>
             </div>
             <div class="alert-message">
