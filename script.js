@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
     nightsContainer.appendChild(totalDisplay);
 
     // Rellenamos el select de noches con opciones de 1 a 15
-    for (let i = 1; i <= 15; i++) {
+    for (let i = 0; i <= 15; i++) {
         const option = document.createElement("option");
         option.value = i;
         option.textContent = i;
