@@ -29,11 +29,11 @@ body {
 }
 
 .barraExcursiones {
-    background-color: #f7f7f7;
+    background-color: #333;
     width: 100vw;
     display: flex;
     flex-direction: row;
-    color: #007CFF;
+    color: aliceblue;
     padding: 15px 0;
     align-items: center;
     align-content: center;
@@ -53,8 +53,8 @@ body {
 .aqui {
     /* background-color: #828282; */
     /* color: aliceblue; */
-    color: #007CFF;
-    border: solid 2px #007CFF;
+    color: aliceblue;
+    border: solid 2px aliceblue;
     border-radius: 5px;
     padding: 5px 15px;
     margin-left: 3px;
@@ -105,8 +105,8 @@ body {
     justify-content: center;
     /* background-color: #828282; */
     /* color: aliceblue; */
-    color: #007CFF;
-    border: solid 2px #007CFF;
+    color: aliceblue;
+    border: solid 2px aliceblue;
     font-size: 105%;
     z-index: 11;
     text-align: center;
