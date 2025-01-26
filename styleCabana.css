@@ -111,7 +111,7 @@ body {
 
 
 .barraImportante {
-    width: 100%;
+    /* width: 100%; */
     background-color: #007BFF;
     color: aliceblue;
     gap: 15px;
@@ -119,8 +119,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-content: center;
     margin: 0 auto;
+}
+
+.descripcionTexto{
+    color: #555;
 }
 
 .services {
