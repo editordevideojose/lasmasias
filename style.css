@@ -89,13 +89,14 @@ body {
     justify-content: center;
 } */
 
-.containerTiempo2{
+.containerTiempo2 {
     z-index: 11;
     background-color: transparent;
     position: relative;
     display: flex;
     justify-content: center;
 }
+
 .tiempo3 {
     width: 45px;
     height: 45px;
@@ -164,7 +165,7 @@ body {
     margin: -40px 0 80px 0;
     font-size: 150%;
 
-    h5{
+    h5 {
         font-weight: 200;
     }
 
@@ -173,7 +174,7 @@ body {
 
     }
 
-    h1{
+    h1 {
         font-weight: bolder;
     }
 
@@ -389,7 +390,7 @@ body {
         color: #0156B3;
     }
 
-    i{
+    i {
         color: #0156B3;
     }
 
@@ -439,7 +440,8 @@ hr {
         justify-content: center;
         align-items: center;
         text-align: center;
-        i{
+
+        i {
             color: rgb(0, 0, 0);
         }
     }
@@ -451,14 +453,14 @@ hr {
         text-align: left;
     }
 
-    .itemsNopermitidos{
+    .itemsNopermitidos {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-            
+
     }
 
-    
+
 
 }
 
@@ -595,7 +597,34 @@ button:hover {
 }
 
 
-footer{
+
+
+
+.containerFinal{
+    width: 100vw;
+    display: flex;
+}
+
+.final {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px 50px 20px;
+    background-color: #e0e0e0;
+}
+
+#btnDispoFinal {
+    margin: 10px 0;
+    width: 70%;
+    background-color: transparent;
+    color: #007BFF;
+    border: solid 2px #007BFF;
+}
+
+footer {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -607,31 +636,5 @@ footer{
     border-top-right-radius: 20px;
     color: #888;
     margin-top: -25px;
-    
-}
 
-
-
-
-
-
-
-.copyFinal{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0px 20px;
-    padding: 30px 20px 50px 20px;
-    background-color: #e0e0e0;
-}
-
-#btnDispoFinal{
-    margin: 10px 0;
-    width: 70%;
-    background-color: transparent;
-    color: #007BFF;
-    border: solid 2px #007BFF;
 }
