@@ -603,6 +603,11 @@ button:hover {
 .containerFinal{
     width: 100vw;
     display: flex;
+    height: 80vh;
+    h2{
+        font-size: 200%;
+    }
+
 }
 
 .final {
@@ -613,15 +618,45 @@ button:hover {
     align-items: center;
     text-align: center;
     padding: 30px 20px 50px 20px;
-    background-color: #e0e0e0;
+    background-color: transparent;
+    color: aliceblue;
+    gap: 15px;
 }
 
 #btnDispoFinal {
     margin: 10px 0;
-    width: 70%;
-    background-color: transparent;
-    color: #007BFF;
+    width: 60%;
+    background-color: #007BFF;
+    color: aliceblue;
     border: solid 2px #007BFF;
+}
+
+.video-background-final {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.video-background-final video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(2px);
+    display: block;
+}
+
+.overlayFinal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
 }
 
 footer {
