@@ -404,6 +404,7 @@ body {
 
 .serviciosDelClub {
     width: 100%;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -414,7 +415,7 @@ body {
     padding: 15px 0 0 0;
 
     h3 {
-        margin: 0 0 5px 0;
+        margin: 0 0 20px 0;
         color: #0156B3;
     }
 
@@ -432,7 +433,10 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-
+        hr{
+            margin-bottom: 5px;
+            width: 100%;
+        }
     }
 }
 
