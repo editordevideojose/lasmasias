@@ -757,7 +757,7 @@ footer {
 
 .carouselCabanaCielo {
     width: 100%;
-    height: 200px; /* Ajusta la altura según necesites */
+    height: 175px; /* Ajusta la altura según necesites */
     overflow: hidden;
     position: relative; /* Importante para manejar el desplazamiento */
     border-top-left-radius: 10px;
@@ -777,6 +777,13 @@ footer {
     object-fit: contain; /* Muestra toda la imagen sin recortarla */
     flex-shrink: 0; /* Evita que las imágenes se colapsen */
 }
+
+
+
+
+
+
+
 
 
 
