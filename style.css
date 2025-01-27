@@ -627,8 +627,19 @@ footer {
     border-top-right-radius: 20px;
     color: #888;
     margin-top: -25px;
-
 }
+
+.containerLogoSat{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 50%;
+        padding: 5px;
+    }
+}
+
 
 
 
