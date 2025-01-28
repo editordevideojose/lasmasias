@@ -434,7 +434,7 @@ body {
         justify-content: center;
         align-items: flex-start;
         hr{
-            margin-bottom: 5px;
+            margin-bottom: 4px;
             width: 100%;
         }
     }
