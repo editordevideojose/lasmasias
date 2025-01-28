@@ -372,23 +372,29 @@ body {
 
 .carouselClub {
     width: 100%;
-    height: 200px; /* Ajusta la altura según necesites */
+    height: 200px;
+    /* Ajusta la altura según necesites */
     overflow: hidden;
-    position: relative; /* Importante para manejar el desplazamiento */
+    position: relative;
+    /* Importante para manejar el desplazamiento */
 }
 
 .carouselClub-images {
     display: flex;
-    transition: transform 0.5s ease-in-out; 
-    transform: translateX(0); /* Empieza desde la primera imagen */
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+    /* Empieza desde la primera imagen */
     width: 100%;
 }
 
 .carouselClub-images img {
-    width: 100%; /* La imagen ocupará todo el espacio del carrusel */
+    width: 100%;
+    /* La imagen ocupará todo el espacio del carrusel */
     height: 100%;
-    object-fit: contain; /* Muestra toda la imagen sin recortarla */
-    flex-shrink: 0; /* Evita que las imágenes se colapsen */
+    object-fit: contain;
+    /* Muestra toda la imagen sin recortarla */
+    flex-shrink: 0;
+    /* Evita que las imágenes se colapsen */
 }
 
 
@@ -433,10 +439,15 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        hr{
+
+        hr {
             margin-bottom: 4px;
             width: 100%;
+            border: 0;
+            height: 1px;
+            background-color: #c3c3c3;
         }
+
     }
 }
 
@@ -458,11 +469,11 @@ hr {
 
 
 /* HORARIO DE SILENCIO */
-
-.horarioDeSilencio{
+.horarioDeSilencio {
+    width: 65%;
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin: 40px 0 10px 0;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
@@ -472,17 +483,19 @@ hr {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.horario{
+.horario {
     padding: 30px 0;
-    h3{
+
+    h3 {
         margin-top: 5px;
     }
-    i{
+
+    i {
         color: gold;
     }
 }
 
-.hora{
+.hora {
     background-color: #abd4ff;
     width: 100%;
     padding: 5px 0;
@@ -490,28 +503,30 @@ hr {
     font-size: 13px;
 }
 
-.prohibidoMotoRuido{
+.prohibidoMotoRuido {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: #F6F6F6;
-    border-radius: 0 0 10px 10px ;
+    border-radius: 0 0 10px 10px;
     color: #333333;
 }
 
-.moto{
+.moto {
     width: 50%;
     padding: 15px 0 20px 0;
     font-size: 14px;
     border-right: 1px solid rgb(202, 202, 202);
-    i{
+
+    i {
         color: red;
     }
 }
 
-#ruido{
+#ruido {
     border-right: none;
 }
 
@@ -570,11 +585,12 @@ hr {
 
 
 
-.containerFinal{
+.containerFinal {
     width: 100vw;
     display: flex;
     height: 80vh;
-    h2{
+
+    h2 {
         font-size: 200%;
     }
 
@@ -593,7 +609,7 @@ hr {
     gap: 15px;
 }
 
-.cursiva{
+.cursiva {
     font-style: italic;
 }
 
@@ -645,14 +661,25 @@ footer {
     border-top-right-radius: 20px;
     color: #888;
     margin-top: -25px;
+
+    p {
+        font-size: 10px;
+    }
 }
 
-.containerLogoSat{
+.containerLogoSat {
     width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
-    img{
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
         width: 50%;
         padding: 5px;
     }
@@ -677,29 +704,35 @@ footer {
 
 .carouselCabana {
     width: 100%;
-    height: 175px; /* Ajusta la altura según necesites */
+    height: 175px;
+    /* Ajusta la altura según necesites */
     overflow: hidden;
-    position: relative; /* Importante para manejar el desplazamiento */
+    position: relative;
+    /* Importante para manejar el desplazamiento */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .carouselCabana-images {
     display: flex;
-    transition: transform 0.5s ease-in-out; 
-    transform: translateX(0); /* Empieza desde la primera imagen */
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+    /* Empieza desde la primera imagen */
     width: 100%;
 }
 
 .carouselCabana-images img {
-    width: 100%; /* La imagen ocupará todo el espacio del carrusel */
+    width: 100%;
+    /* La imagen ocupará todo el espacio del carrusel */
     height: 100%;
-    object-fit: contain; /* Muestra toda la imagen sin recortarla */
-    flex-shrink: 0; /* Evita que las imágenes se colapsen */
+    object-fit: contain;
+    /* Muestra toda la imagen sin recortarla */
+    flex-shrink: 0;
+    /* Evita que las imágenes se colapsen */
 }
 
 
-.icon-containerCabana{
+.icon-containerCabana {
     width: 100%;
     height: 20px;
     border-bottom: 2px black;
@@ -712,7 +745,8 @@ footer {
 }
 
 .icon-containerCabana i {
-    font-size: 12px; /* Ajusta el tamaño según tus necesidades */
+    font-size: 12px;
+    /* Ajusta el tamaño según tus necesidades */
     color: #c3c3c3;
 }
 
@@ -786,34 +820,29 @@ footer {
 
 .carouselCabanaCielo {
     width: 100%;
-    height: 175px; /* Ajusta la altura según necesites */
+    height: 175px;
+    /* Ajusta la altura según necesites */
     overflow: hidden;
-    position: relative; /* Importante para manejar el desplazamiento */
+    position: relative;
+    /* Importante para manejar el desplazamiento */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .carouselCabanaCielo-images {
     display: flex;
-    transition: transform 0.5s ease-in-out; 
-    transform: translateX(0); /* Empieza desde la primera imagen */
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+    /* Empieza desde la primera imagen */
     width: 100%;
 }
 
 .carouselCabanaCielo-images img {
-    width: 100%; /* La imagen ocupará todo el espacio del carrusel */
+    width: 100%;
+    /* La imagen ocupará todo el espacio del carrusel */
     height: 100%;
-    object-fit: contain; /* Muestra toda la imagen sin recortarla */
-    flex-shrink: 0; /* Evita que las imágenes se colapsen */
+    object-fit: contain;
+    /* Muestra toda la imagen sin recortarla */
+    flex-shrink: 0;
+    /* Evita que las imágenes se colapsen */
 }
-
-
-
-
-
-
-
-
-
-
-
