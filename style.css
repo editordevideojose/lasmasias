@@ -467,8 +467,8 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #ffeebe;
-    border: solid 1px red;
+    background-color: #333333;
+    color: aliceblue;
 }
 
 .horario{
@@ -476,12 +476,17 @@ hr {
     h3{
         margin-top: 5px;
     }
+    i{
+        color: gold;
+    }
 }
 
 .hora{
     background-color: #abd4ff;
     width: 100%;
     padding: 5px 0;
+    color: #333333;
+    font-size: 13px;
 }
 
 .prohibidoMotoRuido{
@@ -492,6 +497,7 @@ hr {
     text-align: center;
     background-color: #F6F6F6;
     border-radius: 0 0 10px 10px ;
+    color: #333333;
 }
 
 .moto{
@@ -499,6 +505,9 @@ hr {
     padding: 15px 0 20px 0;
     font-size: 14px;
     border-right: 1px solid rgb(202, 202, 202);
+    i{
+        color: red;
+    }
 }
 
 #ruido{
