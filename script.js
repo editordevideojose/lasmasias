@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const ropaValue = parseInt(ropaSelect.value) || 0;  // Valor de ropa de blanco
 
         let pricePerNight = 0;
-        let additionalPriceForRopa = ropaValue * 100;  // 100 por cada persona
+        let additionalPriceForRopa = ropaValue * 6000;  // 6000 por cada persona
 
         if (cabanaValue === "masia-cielo") {
             pricePerNight = 70000;
