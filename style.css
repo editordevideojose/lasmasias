@@ -462,7 +462,7 @@ hr {
 .horarioDeSilencio{
     display: flex;
     flex-direction: column;
-    margin: 40px;
+    margin: 30px;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
@@ -470,7 +470,6 @@ hr {
     background-color: #333333;
     color: aliceblue;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: none;
 }
 
 .horario{
