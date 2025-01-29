@@ -24,7 +24,7 @@ body {
     flex-direction: column;
     /* background-color: #1A73E8; */
     background-color: #0156B3;
-    color: aliceblue;
+    color: whitesmoke;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -49,10 +49,11 @@ body {
 
     h2 {
         font-size: 110%;
+        color: whitesmoke;
     }
 
     h5 {
-        color: aliceblue;
+        color: whitesmoke;
         margin: 0 auto;
         z-index: 12;
         font-size: 70%;
