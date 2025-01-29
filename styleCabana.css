@@ -113,6 +113,10 @@ body {
     color: #555;
 }
 
+.textoCursiva{
+    font-style: italic;
+}
+
 .services {
     margin: 20px 0 20px 0;
     display: flex;
