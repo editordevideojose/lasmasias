@@ -22,7 +22,7 @@ body {
 #cabanaNombre {
     display: flex;
     flex-direction: column;
-    background-color: #007BFF;
+    background-color: #1A73E8;
     color: aliceblue;
     width: 100%;
     display: flex;
@@ -92,7 +92,7 @@ body {
 
 .barraImportante {
     /* width: 100%; */
-    background-color: #007BFF;
+    background-color: #1A73E8;
     color: aliceblue;
     gap: 15px;
     padding: 10px;
@@ -167,7 +167,7 @@ body {
     width: 94%;
     padding: 15px 10px;
     border-radius: 5px;
-    background-color: #007BFF;
+    background-color: green;
     color: aliceblue;
     text-align: center;
     margin: 15px 0px;
@@ -175,6 +175,8 @@ body {
 
     i {
         margin-right: 5px;
+        color: aliceblue;
+        font-size: 18px;
     }
 }
 
@@ -187,7 +189,7 @@ body {
     width: 94%;
     padding: 15px 10px;
     border-radius: 5px;
-    background-color: green;
+    background-color: #1A73E8;
     color: aliceblue;
     text-align: center;
     margin: 10px 0 40px 0;
