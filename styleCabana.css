@@ -67,6 +67,10 @@ body {
     text-align: justify;
 }
 
+.description p {
+    font-size: 14px;
+}
+
 .carouselClub {
     margin-top: 70px;
     width: 100%;
@@ -113,7 +117,7 @@ body {
     flex-direction: column;
     background-color: #e6e6e6;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
 
 }
 
@@ -143,6 +147,15 @@ body {
 .icon-container i {
     font-size: 10px;
     color: #007BFF;
+    margin-right: 10px;
+}
+
+.containerNo{
+    padding: 0 10px;
+}
+
+.containerNo i{
+    font-size: 10px;
     margin-right: 10px;
 }
 
