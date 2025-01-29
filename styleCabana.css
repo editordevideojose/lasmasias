@@ -50,12 +50,13 @@ body {
         font-size: 110%;
     }
 
-    h4 {
+    h5 {
         color: aliceblue;
         margin: 0 auto;
         z-index: 12;
         font-size: 70%;
-        font-weight: 400;
+        font-weight: 200;
+        font-size: 50%;
     }
 }
 
